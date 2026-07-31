@@ -37,7 +37,7 @@ Refer to each skill's own README for dependencies and configuration.
 | Skill | Description | Repo |
 |---|---|---|
 | **download-paper-collection** | Batch-download papers from heterogeneous Excel lists. Auto-detects schema, merges PDF/URL/DOI/arXiv, validates integrity, produces auditable manifests. | [techdou/download-paper-collection](https://github.com/techdou/download-paper-collection) |
-| **paper-reading** | Purpose-first paper interpretation into structured long-form HTML with KaTeX formulas, Mermaid diagrams, and annotation write-back. *Forked from Agentchengfeng/paper-reading-skills (Apache-2.0).* | [techdou/paper-reading](https://github.com/techdou/paper-reading) |
+| **paper-reading** | Purpose-first interpretation of a specific paper (or a named comparison set): two-pass reading, experiment-first review, structured HTML with KaTeX formulas, Mermaid diagrams, and annotation write-back. v1.1.0 — tightened agent routing with 7 reading modes. *Forked from Agentchengfeng/paper-reading-skills (Apache-2.0).* | [techdou/paper-reading](https://github.com/techdou/paper-reading) |
 | **mono-diagram** | Pure black-on-white academic diagrams. Mermaid/SVG sources, lint for print safety, high-res PNG output for Word/PDF. | [techdou/mono-diagram](https://github.com/techdou/mono-diagram) |
 | **omml-formula-skill** | Convert LaTeX formulas into editable Office Math (OMML) in Word/PowerPoint — not screenshots or garbled text. | [techdou/omml-formula-skill](https://github.com/techdou/omml-formula-skill) |
 
