@@ -1,9 +1,5 @@
 # awesome-techdou-skills
 
-> A curated index of portable Agent Skills built by [@techdou](https://github.com/techdou) (DouKnowAI / 豆懂AI).
->
-> 由 [@techdou](https://github.com/techdou)（DouKnowAI / 豆懂AI）打造的可移植 Agent Skill 索引合集。
-
 [English](#english) | [中文](#中文)
 
 ---
@@ -36,8 +32,10 @@ Refer to each skill's own README for dependencies and configuration.
 
 | Skill | Description | Repo |
 |---|---|---|
+| **nature-skills** | Monorepo of 13 academic skills: paper search, citation, data visualization, figure generation, polishing, response-to-reviewers, paper-to-patent, paper-to-PPT, and more. Built to Nature-level standards. | [techdou/nature-skills](https://github.com/techdou/nature-skills) |
 | **download-paper-collection** | Batch-download papers from heterogeneous Excel lists. Auto-detects schema, merges PDF/URL/DOI/arXiv, validates integrity, produces auditable manifests. | [techdou/download-paper-collection](https://github.com/techdou/download-paper-collection) |
 | **paper-reading** | Purpose-first interpretation of a specific paper (or a named comparison set): two-pass reading, experiment-first review, structured HTML with KaTeX formulas, Mermaid diagrams, and annotation write-back. v1.1.0 — tightened agent routing with 7 reading modes. *Forked from Agentchengfeng/paper-reading-skills (Apache-2.0).* | [techdou/paper-reading](https://github.com/techdou/paper-reading) |
+| **paper-reading-skills** | Installable Claude Code and Codex paper-reading skill with HTML annotation bridge. | [techdou/paper-reading-skills](https://github.com/techdou/paper-reading-skills) |
 | **mono-diagram** | Pure black-on-white academic diagrams. Mermaid/SVG sources, lint for print safety, high-res PNG output for Word/PDF. | [techdou/mono-diagram](https://github.com/techdou/mono-diagram) |
 | **omml-formula-skill** | Convert LaTeX formulas into editable Office Math (OMML) in Word/PowerPoint — not screenshots or garbled text. | [techdou/omml-formula-skill](https://github.com/techdou/omml-formula-skill) |
 
@@ -50,22 +48,26 @@ Refer to each skill's own README for dependencies and configuration.
 | **ai-promo-video** | End-to-end AI promo video pipeline. Model research, marketing copy, voiceover scripts, shot-by-shot prompts for seedance/Sora/Kling/Runway/HeyGen. | [techdou/ai-promo-video](https://github.com/techdou/ai-promo-video) |
 | **agnes-ai-generation-skill** | Call Agnes AI / Sapiens AI generation APIs for text, image, and video. | [techdou/agnes-ai-generation-skill](https://github.com/techdou/agnes-ai-generation-skill) |
 | **boson-ai-skill** | Boson AI Higgs TTS 3 + Higgs Avatar. 102-language speech, voice cloning, talking-head avatar videos. | [techdou/boson-ai-skill](https://github.com/techdou/boson-ai-skill) |
+| **dou-ai-course-video** | Course video editing template — full ChatCut workflow from raw lecture to polished cut. | [techdou/dou-ai-course-video](https://github.com/techdou/dou-ai-course-video) |
+| **koubo-clean** | Talking-head video cleanup spec — trim only stumbles and fillers, never delete content. | [techdou/koubo-clean](https://github.com/techdou/koubo-clean) |
 
 ### 🎨 Image & Visual | 图像与视觉
 
 | Skill | Description | Repo |
 |---|---|---|
-| **image2-api** | Generate and edit images through OpenAI-compatible Images API or GPT Image 2 relay. | [techdou/image2-api](https://github.com/techdou/image2-api) |
+| **image2-api** | Generate and edit images through OpenAI-compatible Images API or GPT Image 2 relay. Multi-provider fallback, structured prompt compilation, reproducible metadata. | [techdou/image2-api](https://github.com/techdou/image2-api) |
 | **edu-image-prompt** | Turn knowledge points into ready-to-paste AI image generation prompts. Education-optimized, reliable Chinese rendering. | [techdou/edu-image-prompt](https://github.com/techdou/edu-image-prompt) |
 | **douip-illustrations** | DouKnowAI branded editorial illustrations. Orange coffee-bean IP for 公众号/小红书/博客/课程. *Adapted from helloianneo/ian-xiaohei-illustrations (MIT).* | [techdou/douip-illustrations](https://github.com/techdou/douip-illustrations) |
 | **remove-checkerboard** | Remove fake checkerboard backgrounds (AI fake transparency) and solid/white backgrounds. Auto-detects, produces real transparent PNGs. | [techdou/remove-checkerboard](https://github.com/techdou/remove-checkerboard) |
 | **pet-reskin** | Generate and install complete canvas-pet character skins. Supports single/multi-skin architectures, Gemini/image2-api providers. | [techdou/pet-reskin](https://github.com/techdou/pet-reskin) |
+| **open-image-prompts** | Open, local-first visual prompt archive with traceable prompt-image references and installable Agent Skills. | [techdou/open-image-prompts](https://github.com/techdou/open-image-prompts) |
 
 ### 🔊 Audio & Speech | 音频语音
 
 | Skill | Description | Repo |
 |---|---|---|
-| **mimo-lecture-audio-skill** | Convert lecture notes/scripts into MiMo voice broadcast audio. Modular: TTS core + optional HTML player, subtitles, ASR QA, packaging. | [techdou/mimo-lecture-audio-skill](https://github.com/techdou/mimo-lecture-audio-skill) |
+| **mimo-audio-skill** | Convert lecture notes/scripts into MiMo voice broadcast audio. Modular: TTS core + optional HTML player, subtitles, ASR QA, packaging. | [techdou/mimo-audio-skill](https://github.com/techdou/mimo-audio-skill) |
+| **media-transcribe** | Local audio/video transcription and timestamp workflow (Qwen3-ASR). Data never leaves your machine. | [techdou/media-transcribe](https://github.com/techdou/media-transcribe) |
 
 ### 📝 Document & Publishing | 文档与发布
 
@@ -76,6 +78,14 @@ Refer to each skill's own README for dependencies and configuration.
 | **typora-html-enhancer** | Inject modern UI enhancements into Typora/Markdown HTML exports. Sidebar TOC, multi-theme, reading progress bar, mobile responsive. | [techdou/typora-html-enhancer](https://github.com/techdou/typora-html-enhancer) |
 | **md-image-uploader** | Batch-upload local images in Markdown/HTML to image hosts (R2/OSS/COS/Qiniu/MinIO/B2) and rewrite paths to CDN URLs. | [techdou/md-image-uploader](https://github.com/techdou/md-image-uploader) |
 | **surge-publish** | Publish static web projects to surge.sh CDN. Pre-flight checks, non-interactive publishing, revisions/rollback, custom domains. | [techdou/surge-publish](https://github.com/techdou/surge-publish) |
+| **gzh-design-skill** | Turn Markdown into paste-ready WeChat article HTML — 6 curated themes + theme generator + two-stage validation. | [techdou/gzh-design-skill](https://github.com/techdou/gzh-design-skill) |
+
+### 🎯 Slides & Presentation | 幻灯片与演示
+
+| Skill | Description | Repo |
+|---|---|---|
+| **guizang-ppt-skill** | Generate polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime. | [techdou/guizang-ppt-skill](https://github.com/techdou/guizang-ppt-skill) |
+| **open-kimi-ppt-skill** | Unofficial Kimi Slides skill — generate editable PPTD + PPTX with a local browser editor. | [techdou/open-kimi-ppt-skill](https://github.com/techdou/open-kimi-ppt-skill) |
 
 ### 🗄️ Storage & Infrastructure | 存储与基础设施
 
@@ -109,7 +119,7 @@ git clone https://github.com/techdou/<skill-name>.git ~/.agents/skills/<skill-na
 
 ## 统计
 
-- **共 21 个 skill**，覆盖学术研究、视频生成、图像处理、音频语音、文档发布、存储基础设施 6 大领域
+- **共 30 个 skill**（含 nature-skills monorepo 内 13 个子 skill），覆盖学术研究、视频生成、图像处理、音频语音、文档发布、幻灯片演示、存储基础设施 7 大领域
 - 全部支持中英双语 README
 - 敏感信息（API 密钥、.env）严格通过 `.gitignore` 排除，已全部验证无泄露
 
