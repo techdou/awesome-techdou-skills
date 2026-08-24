@@ -37,6 +37,12 @@ Refer to each skill's own README for dependencies and configuration.
 | **mono-diagram** | Pure black-on-white academic diagrams. Mermaid/SVG sources, lint for print safety, high-res PNG output for Word/PDF. | [techdou/mono-diagram](https://github.com/techdou/mono-diagram) |
 | **omml-formula-skill** | Convert LaTeX formulas into editable Office Math (OMML) in Word/PowerPoint — not screenshots or garbled text. | [techdou/omml-formula-skill](https://github.com/techdou/omml-formula-skill) |
 
+### 🎓 Education & Teaching | 教育教学
+
+| Skill | Description | Repo |
+|---|---|---|
+| **classroom-annotator** | Three-level annotation of classroom teaching videos — operation / behavior / activity — exported to xlsx. AI pre-annotation with human-in-the-loop correction. | [techdou/classroom-annotator](https://github.com/techdou/classroom-annotator) |
+
 ### 🎬 Video Generation | 视频生成
 
 | Skill | Description | Repo |
@@ -48,6 +54,7 @@ Refer to each skill's own README for dependencies and configuration.
 | **boson-ai-skill** | Boson AI Higgs TTS 3 + Higgs Avatar. 102-language speech, voice cloning, talking-head avatar videos. | [techdou/boson-ai-skill](https://github.com/techdou/boson-ai-skill) |
 | **dou-ai-course-video** | Course video editing template — full ChatCut workflow from raw lecture to polished cut. | [techdou/dou-ai-course-video](https://github.com/techdou/dou-ai-course-video) |
 | **koubo-clean** | Talking-head video cleanup spec — trim only stumbles and fillers, never delete content. | [techdou/koubo-clean](https://github.com/techdou/koubo-clean) |
+| **relay-studio-media** | AI image/video generation via Relay Studio reverse proxy (Seedream/Seedance). Capability-aware routing + deterministic stdlib wrapper. | [techdou/relay-studio-media](https://github.com/techdou/relay-studio-media) |
 
 ### 🎨 Image & Visual | 图像与视觉
 
@@ -65,6 +72,7 @@ Refer to each skill's own README for dependencies and configuration.
 |---|---|---|
 | **mimo-audio-skill** | Convert lecture notes/scripts into MiMo voice broadcast audio. Modular: TTS core + optional HTML player, subtitles, ASR QA, packaging. | [techdou/mimo-audio-skill](https://github.com/techdou/mimo-audio-skill) |
 | **media-transcribe** | Local audio/video transcription and timestamp workflow (Qwen3-ASR). Data never leaves your machine. | [techdou/media-transcribe](https://github.com/techdou/media-transcribe) |
+| **poly-tts** | Local zero-shot voice-cloning TTS for macOS Apple Silicon — CosyVoice3 wrapper. Review-hardened: atomic output, single-instance lock, resumable install. | [techdou/poly-tts](https://github.com/techdou/poly-tts) |
 
 ### 📝 Document & Publishing | 文档与发布
 
@@ -75,6 +83,12 @@ Refer to each skill's own README for dependencies and configuration.
 | **typora-html-enhancer** | Inject modern UI enhancements into Typora/Markdown HTML exports. Sidebar TOC, multi-theme, reading progress bar, mobile responsive. | [techdou/typora-html-enhancer](https://github.com/techdou/typora-html-enhancer) |
 | **md-image-uploader** | Batch-upload local images in Markdown/HTML to image hosts (R2/OSS/COS/Qiniu/MinIO/B2) and rewrite paths to CDN URLs. | [techdou/md-image-uploader](https://github.com/techdou/md-image-uploader) |
 | **surge-publish** | Publish static web projects to surge.sh CDN. Pre-flight checks, non-interactive publishing, revisions/rollback, custom domains. | [techdou/surge-publish](https://github.com/techdou/surge-publish) |
+
+### 🛠️ Development Tools | 开发工具
+
+| Skill | Description | Repo |
+|---|---|---|
+| **developing-coze-apps** | Plan, build, review, and package Coze Coding (扣子编程) apps, incl. single-HTML/iframe delivery. | [techdou/developing-coze-apps](https://github.com/techdou/developing-coze-apps) |
 
 ### 🗄️ Storage & Infrastructure | 存储与基础设施
 
@@ -108,7 +122,7 @@ git clone https://github.com/techdou/<skill-name>.git ~/.agents/skills/<skill-na
 
 ## 统计
 
-- **共 27 个 skill**，覆盖学术研究、视频生成、图像处理、音频语音、文档发布、存储基础设施 6 大领域
+- **共 28 个 skill**，覆盖学术研究、教育教学、视频生成、图像处理、音频语音、文档发布、开发工具、存储基础设施 8 大领域
 - 兼容 ZCode、Claude Code、OpenAI Codex、OpenCode 等 Agent 客户端
 - 敏感信息（API 密钥、.env）严格通过 `.gitignore` 排除，已全部验证无泄露
 
