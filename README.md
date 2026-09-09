@@ -28,6 +28,14 @@ Refer to each skill's own README for dependencies and configuration.
 
 ## Skill Catalog | Skill 目录
 
+### 🤖 AI Models & Delegation | 模型调用与委派
+
+| Skill | Description | Repo |
+|---|---|---|
+| **coze-ai-models** | Full Coze model suite adapter: LLM chat/streaming/vision, Seedream image generation, Seedance video (first/last frame, multimodal refs), TTS/ASR, embeddings. Sandbox SDK or local OpenAI-compatible calling. | [techdou/coze-ai-models](https://github.com/techdou/coze-ai-models) |
+| **codex** | Delegate bounded work to the local OpenAI Codex CLI. Model discovery/selection, reasoning control, session continuity, cache-aware repeated review/writing. | [techdou/codex](https://github.com/techdou/codex) |
+| **gemini** | Delegate bounded work to the local Google Gemini CLI (Antigravity-first, Gemini CLI fallback). Model probing, thinking control, session continuity, PDF/multimodal review. | [techdou/gemini](https://github.com/techdou/gemini) |
+
 ### 📚 Academic Research | 学术研究
 
 | Skill | Description | Repo |
@@ -73,6 +81,7 @@ Refer to each skill's own README for dependencies and configuration.
 | **mimo-audio-skill** | Convert lecture notes/scripts into MiMo voice broadcast audio. Modular: TTS core + optional HTML player, subtitles, ASR QA, packaging. | [techdou/mimo-audio-skill](https://github.com/techdou/mimo-audio-skill) |
 | **media-transcribe** | Local audio/video transcription and timestamp workflow (Qwen3-ASR). Data never leaves your machine. | [techdou/media-transcribe](https://github.com/techdou/media-transcribe) |
 | **poly-tts** | Local zero-shot voice-cloning TTS for macOS Apple Silicon — CosyVoice3 wrapper. Review-hardened: atomic output, single-instance lock, resumable install. | [techdou/poly-tts](https://github.com/techdou/poly-tts) |
+| **qqmusic-decrypt** | Decrypt QQ Music exclusive encrypted audio (.mflac/.mgg/.qmc* families) to lossless FLAC/OGG or 320k MP3, for personal backups of owned music. | [techdou/qqmusic-decrypt](https://github.com/techdou/qqmusic-decrypt) |
 
 ### 📝 Document & Publishing | 文档与发布
 
@@ -122,8 +131,9 @@ git clone https://github.com/techdou/<skill-name>.git ~/.agents/skills/<skill-na
 
 ## 统计
 
-- **共 28 个 skill**，覆盖学术研究、教育教学、视频生成、图像处理、音频语音、文档发布、开发工具、存储基础设施 8 大领域
+- **共 32 个 skill**，覆盖模型调用与委派、学术研究、教育教学、视频生成、图像处理、音频语音、文档发布、开发工具、存储基础设施 9 大领域
 - 兼容 ZCode、Claude Code、OpenAI Codex、OpenCode 等 Agent 客户端
+- 全部支持中英双语 README
 - 敏感信息（API 密钥、.env）严格通过 `.gitignore` 排除，已全部验证无泄露
 
 ---
