@@ -44,6 +44,9 @@ Refer to each skill's own README for dependencies and configuration.
 | **paper-reading** | Purpose-first interpretation of a specific paper (or a named comparison set): two-pass reading, experiment-first review, structured HTML with KaTeX formulas, Mermaid diagrams, and annotation write-back. v1.1.0 — tightened agent routing with 7 reading modes. *Forked from Agentchengfeng/paper-reading-skills (Apache-2.0).* | [techdou/paper-reading](https://github.com/techdou/paper-reading) |
 | **mono-diagram** | Pure black-on-white academic diagrams. Mermaid/SVG sources, lint for print safety, high-res PNG output for Word/PDF. | [techdou/mono-diagram](https://github.com/techdou/mono-diagram) |
 | **omml-formula-skill** | Convert LaTeX formulas into editable Office Math (OMML) in Word/PowerPoint — not screenshots or garbled text. | [techdou/omml-formula-skill](https://github.com/techdou/omml-formula-skill) |
+| **research-paper-hub** | Single front door for paper-research workflows. Routes 30 vendor-locked playbooks across CCF-A and Nature tracks — literature search, deep reading, idea review, experiment design, writing, review, rebuttal — with persistent `.research/` project state. | [techdou/research-paper-hub](https://github.com/techdou/research-paper-hub) |
+| **visualization-innovation** | Mechanism-level research-visualization innovation: chart redesign, new chart families, interaction and coordinated-view innovation, evidence-based visual stories, prior-art-aware novelty claims. | [techdou/visualization-innovation](https://github.com/techdou/visualization-innovation) |
+| **research-visual-analytics** | Design and audit scientific visual-analysis workspaces: task-to-view architecture, encoding correctness, coordination contracts, statistical integrity, reproducible interaction. | [techdou/research-visual-analytics](https://github.com/techdou/research-visual-analytics) |
 
 ### 🎓 Education & Teaching | 教育教学
 
@@ -131,7 +134,7 @@ git clone https://github.com/techdou/<skill-name>.git ~/.agents/skills/<skill-na
 
 ## 统计
 
-- **共 32 个 skill**，覆盖模型调用与委派、学术研究、教育教学、视频生成、图像处理、音频语音、文档发布、开发工具、存储基础设施 9 大领域
+- **共 35 个 skill**，覆盖模型调用与委派、学术研究、教育教学、视频生成、图像处理、音频语音、文档发布、开发工具、存储基础设施 9 大领域
 - 兼容 ZCode、Claude Code、OpenAI Codex、OpenCode 等 Agent 客户端
 - 全部支持中英双语 README
 - 敏感信息（API 密钥、.env）严格通过 `.gitignore` 排除，已全部验证无泄露
