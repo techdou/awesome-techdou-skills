@@ -47,6 +47,7 @@ Refer to each skill's own README for dependencies and configuration.
 | **research-paper-hub** | Single front door for paper-research workflows. Routes 30 vendor-locked playbooks across CCF-A and Nature tracks — literature search, deep reading, idea review, experiment design, writing, review, rebuttal — with persistent `.research/` project state. | [techdou/research-paper-hub](https://github.com/techdou/research-paper-hub) |
 | **visualization-innovation** | Mechanism-level research-visualization innovation: chart redesign, new chart families, interaction and coordinated-view innovation, evidence-based visual stories, prior-art-aware novelty claims. | [techdou/visualization-innovation](https://github.com/techdou/visualization-innovation) |
 | **research-visual-analytics** | Design and audit scientific visual-analysis workspaces: task-to-view architecture, encoding correctness, coordination contracts, statistical integrity, reproducible interaction. | [techdou/research-visual-analytics](https://github.com/techdou/research-visual-analytics) |
+| **nenu-computer-tech-proposal** | Plan, co-write, and audit NENU CS master's thesis proposals — six modes (guiding / co-writing / diagnosis / evidence / defense / final review), evidence-first verification, no fabricated citations or data. *Private, personal use.* | [techdou/nenu-computer-tech-proposal](https://github.com/techdou/nenu-computer-tech-proposal) |
 
 ### 🎓 Education & Teaching | 教育教学
 
@@ -95,12 +96,23 @@ Refer to each skill's own README for dependencies and configuration.
 | **typora-html-enhancer** | Inject modern UI enhancements into Typora/Markdown HTML exports. Sidebar TOC, multi-theme, reading progress bar, mobile responsive. | [techdou/typora-html-enhancer](https://github.com/techdou/typora-html-enhancer) |
 | **md-image-uploader** | Batch-upload local images in Markdown/HTML to image hosts (R2/OSS/COS/Qiniu/MinIO/B2) and rewrite paths to CDN URLs. | [techdou/md-image-uploader](https://github.com/techdou/md-image-uploader) |
 | **surge-publish** | Publish static web projects to surge.sh CDN. Pre-flight checks, non-interactive publishing, revisions/rollback, custom domains. | [techdou/surge-publish](https://github.com/techdou/surge-publish) |
+| **dou-tone** | Personal Chinese writing, rewriting and polishing skill: proofreading, tone-preserving polish, rewriting, genre conversion, drafting from materials. L1–L5 edit levels with scene references for reports / academia / teaching / PPT / 公众号. | [techdou/dou-tone](https://github.com/techdou/dou-tone) |
+| **ppt-studio** | Fully offline PPT / slides / poster creation for agents — python-pptx local engine, PPTD format, PowerPoint COM visual QA, zero-dependency viewer, OMML formula rendering (pairs with omml-formula-skill). | [techdou/ppt-studio](https://github.com/techdou/ppt-studio) |
 
 ### 🛠️ Development Tools | 开发工具
 
 | Skill | Description | Repo |
 |---|---|---|
 | **developing-coze-apps** | Plan, build, review, and package Coze Coding (扣子编程) apps, incl. single-HTML/iframe delivery. | [techdou/developing-coze-apps](https://github.com/techdou/developing-coze-apps) |
+| **cf** | Cloudflare's next-gen `cf` CLI (wrangler successor) usage skill. Safe search → schema → dry-run workflow over the full Cloudflare API: DNS, zones, Workers, WAF, R2/D1/KV. Beta pitfalls documented (silent abort on exit 0, --force ambiguity). | [techdou/cf](https://github.com/techdou/cf) |
+| **wsl-operations** | Operate WSL/WSL2 from Windows: distro lifecycle, `.wslconfig`/`wsl.conf`/systemd, repair, Windows↔Linux interop, Python/Node/Docker/CUDA environments, experiments, health checks. Doctor scripts included. | [techdou/wsl-operations](https://github.com/techdou/wsl-operations) |
+
+### 🔌 Integrations | 集成接入
+
+| Skill | Description | Repo |
+|---|---|---|
+| **feishu-bitable** | Wire forms/data into Feishu Bitable end-to-end: self-built app setup, two-layer permissions (app scope + bot collaborator), four-key `.env` config, TypeScript wiring reference, probe self-check. Same pattern fits GitHub/Notion/钉钉 integrations. | [techdou/feishu-bitable](https://github.com/techdou/feishu-bitable) |
+| **github-workspace-bridge** | Safely attach local/sandbox/Coze projects to your GitHub identity: multi-account PAT registry, clone/bootstrap/sync, origin/upstream hygiene, ZIP-to-git init. *Private (douknowai), personal use.* | [douknowai/github-workspace-bridge](https://github.com/douknowai/github-workspace-bridge) |
 
 ### 🗄️ Storage & Infrastructure | 存储与基础设施
 
@@ -134,9 +146,9 @@ git clone https://github.com/techdou/<skill-name>.git ~/.agents/skills/<skill-na
 
 ## 统计
 
-- **共 35 个 skill**，覆盖模型调用与委派、学术研究、教育教学、视频生成、图像处理、音频语音、文档发布、开发工具、存储基础设施 9 大领域
+- **共 42 个 skill**，覆盖模型调用与委派、学术研究、教育教学、视频生成、图像处理、音频语音、文档发布、开发工具、集成接入、存储基础设施 10 大领域
 - 兼容 ZCode、Claude Code、OpenAI Codex、OpenCode 等 Agent 客户端
-- 全部支持中英双语 README
+- README 统一风格：一句话定位 / 安装与更新 / 使用 / 场景参考 / 维护与来源
 - 敏感信息（API 密钥、.env）严格通过 `.gitignore` 排除，已全部验证无泄露
 
 ---
