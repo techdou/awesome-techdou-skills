@@ -33,8 +33,8 @@ Refer to each skill's own README for dependencies and configuration.
 | Skill | Description | Repo |
 |---|---|---|
 | **coze-ai-models** | Full Coze model suite adapter: LLM chat/streaming/vision, Seedream image generation, Seedance video (first/last frame, multimodal refs), TTS/ASR, embeddings. Sandbox SDK or local OpenAI-compatible calling. | [techdou/coze-ai-models](https://github.com/techdou/coze-ai-models) |
-| **codex** | Delegate bounded work to the local OpenAI Codex CLI. Model discovery/selection, reasoning control, session continuity, cache-aware repeated review/writing. | [techdou/codex](https://github.com/techdou/codex) |
-| **gemini** | Delegate bounded work to the local Google Gemini CLI (Antigravity-first, Gemini CLI fallback). Model probing, thinking control, session continuity, PDF/multimodal review. | [techdou/gemini](https://github.com/techdou/gemini) |
+| **codex-delegate** | Delegate bounded work to the local OpenAI Codex CLI. Model discovery/selection, reasoning control, session continuity, cache-aware repeated review/writing. | [techdou/codex-delegate](https://github.com/techdou/codex-delegate) |
+| **gemini-delegate** | Delegate bounded work to the local Google Gemini CLI (Antigravity-first, Gemini CLI fallback). Model probing, thinking control, session continuity, PDF/multimodal review. | [techdou/gemini-delegate](https://github.com/techdou/gemini-delegate) |
 
 ### 📚 Academic Research | 学术研究
 
@@ -104,7 +104,7 @@ Refer to each skill's own README for dependencies and configuration.
 | Skill | Description | Repo |
 |---|---|---|
 | **developing-coze-apps** | Plan, build, review, and package Coze Coding (扣子编程) apps, incl. single-HTML/iframe delivery. | [techdou/developing-coze-apps](https://github.com/techdou/developing-coze-apps) |
-| **cf** | Cloudflare's next-gen `cf` CLI (wrangler successor) usage skill. Safe search → schema → dry-run workflow over the full Cloudflare API: DNS, zones, Workers, WAF, R2/D1/KV. Beta pitfalls documented (silent abort on exit 0, --force ambiguity). | [techdou/cf](https://github.com/techdou/cf) |
+| **cf-ops** | Cloudflare's next-gen `cf` CLI (wrangler successor) usage skill. Safe search → schema → dry-run workflow over the full Cloudflare API: DNS, zones, Workers, WAF, R2/D1/KV. Beta pitfalls documented (silent abort on exit 0, --force ambiguity). | [techdou/cf-ops](https://github.com/techdou/cf-ops) |
 | **wsl-operations** | Operate WSL/WSL2 from Windows: distro lifecycle, `.wslconfig`/`wsl.conf`/systemd, repair, Windows↔Linux interop, Python/Node/Docker/CUDA environments, experiments, health checks. Doctor scripts included. | [techdou/wsl-operations](https://github.com/techdou/wsl-operations) |
 
 ### 🔌 Integrations | 集成接入
